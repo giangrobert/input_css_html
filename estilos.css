@@ -1,0 +1,80 @@
+.formulario-estilizado {
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.campo-formulario {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #1A1A2E;
+    color: #FFF;
+    border: 2px solid #5758BB;
+    transition: all 0.3s ease-in-out;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus {
+    outline: none;
+    border-color: #05c7f2;
+    box-shadow: 0 0 10px #05c7f2;
+}
+
+.campo-formulario input:hover,
+.campo-formulario select:hover,
+.campo-formulario button:hover {
+    border-color: #FFF;
+}
+
+.campo-formulario button {
+    background-color: #5758BB;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #5758BB;
+}
+
+.campo-formulario button:hover {
+    background-color: transparent;
+    color: #5758BB;
+}
+
+.select-estilizado {
+    position: relative;
+}
+
+.select-estilizado:after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #FFF;
+    pointer-events: none;
+}
+
+/* Estilos para las vistas móviles */
+@media screen and (max-width: 600px) {
+    .campo-formulario input,
+    .campo-formulario select,
+    .campo-formulario button {
+        font-size: 14px;
+    }
+}
